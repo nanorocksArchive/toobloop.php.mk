@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name='description' content='YouTube loop app. Easy loop your favourite music with toobloop app. Lisen music all day' />
+    <meta name='keywords' content='music, loop, youtube, loopapp, toobloop, lisen music all day' />
+
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+    <title>ToobLoop App - listen music from youtube in loop - lisen music all day - easy loop - favourite music - youtube</title>
+    <style>
+        *{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <div class="text-center">
+        <a href="index.html">
+            <img src="img/toobloop-long.png" alt="Logo" class="main-logo">
+        </a>
+        <h1>Listen music from 
+            <a href="https://www.youtube.com" target="_blank"><span class="you">YOU</span><span class="tube">TUBE</span></a> in loop.
+        </h1>
+        <h5>
+            <strong><i>
+            Written and hosted by Andrej Nankov 
+            (<a href="https://github.com/nanorocks" target="_blank">
+                @nanorocks</a>). 
+            </i></strong>
+        </h5>
+    </div>
+</header>
+<section id="load-forms">
+    <div class="text-center">
+        <input type="url" name="url" id="input-url" placeholder="Enter url from youtube ..." class="form-control">
+        <button class="btn" id="btn-find-url">FIND URL</button>
+        <div id="errors text-center">
+            <span class="err-url" id="err-url"></span>
+        </div>
+    </div>
+
+</section>
+<section id="load-url">
+    <div class="text-center pt-20 pb-50">
+        <iframe id="load-link" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+</section>
+<script src="js/main.js"></script>
+</body>
+</html>
