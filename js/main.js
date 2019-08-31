@@ -30,13 +30,14 @@ window.onload = function(e)
 
         let val = params.get('v');
 
-        let queryParams =  val + 'autoplay=1&loop=1&rel=0&fs=1&modestbranding=1&iv_load_policy=3&enablejsapi=1&origin='+ window.location.href + '&widgetid=1';
+        let queryParams =  val + '?autoplay=1&controls=0&loop=1&playlist=8HSr8BjcufM&amp;showinfo=0';
 
         let src = 'http://www.youtube.com/embed/' + queryParams;
 
+        console.log(src);
         document.getElementById('load-link').src = src;
         localStorage.setItem('url', src);
-        location.reload();
+        //location.reload();
     });
 
 
@@ -44,7 +45,7 @@ window.onload = function(e)
     {
         let example = '';
         let url = localStorage.getItem('url');
-        if( url == null)
+        if( url == null )
         {
             document.getElementById('load-link').src = example;
             return -1;
