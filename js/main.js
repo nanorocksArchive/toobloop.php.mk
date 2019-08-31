@@ -32,7 +32,9 @@ window.onload = function(e)
 
         let queryParams =  val + '?autoplay=1&controls=0&loop=1&playlist=8HSr8BjcufM&amp;showinfo=0';
 
-        let src = 'http://www.youtube.com/embed/' + queryParams;
+        let protocol = (window.location.protocol == 'http')? 'http' : 'https';
+
+        let src = protocol + '://www.youtube.com/embed/' + queryParams;
 
         console.log(src);
         document.getElementById('load-link').src = src;
